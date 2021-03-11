@@ -139,7 +139,7 @@ $data = '[
 
   <header id="header">
 
-    <img src="https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="">
+    <img src="https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="" class="logo">
     
     <ul class="header-list">
       <li>Home</li>
@@ -155,7 +155,7 @@ $data = '[
 
       <div class="pasta-lunga">
 
-        <h2>le lunghe</h2>
+        <h2 class="box-title">le lunghe</h2>
 
         <div class="pasta-type">
 
@@ -170,7 +170,7 @@ $data = '[
 
       <div class="pasta-corta">
 
-        <h2>le corte</h2>
+        <h2 class="box-title">le corte</h2>
 
         <div class="pasta-type">
           @foreach ($array as $key => $pasta)
@@ -184,7 +184,7 @@ $data = '[
 
       <div class="pasta-cortissima">
 
-        <h2>le cortissime</h2>
+        <h2 class="box-title">le cortissime</h2>
 
         <div class="pasta-type">
 
@@ -207,46 +207,64 @@ $data = '[
     <div class="footer-content">
 
       <div class="la-molisana-info">
-        <img src="https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="">
-        <span>Ragione sociale: La Molisana S.P.A.</span>
-        <span>Sede legale: Contrada Colle delle Alpi, 100/A</span>
-        <span>86100 - Campobasso (CB)</span>
-        <span>Pec: lamolisana@pec.it</span>
-        <span>Tel: +39 0874 4981</span>
-        <span>Fax: +39 0874 629584</span>
-        <span>info@lamolisana.it (per segnalazioni degli utenti)</span>
-        <span>commerciale@lamolisana.it</span>
-        <span>export@lamolisana.it</span>
-        <span>numero verde 800818081</span>
-        <span>telefono 3801292455</span>
+
+        <img src="https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="" class="logo">
+        <ul>
+          <li>Ragione sociale: La Molisana S.P.A.</li>
+          <li>Sede legale: Contrada Colle delle Alpi, 100/A</li>
+          <li>86100 - Campobasso (CB)</li>
+          <li>Pec: lamolisana@pec.it</li>
+          <li>Tel: +39 0874 4981</li>
+          <li>Fax: +39 0874 629584</li>
+          <li>info@lamolisana.it (per segnalazioni degli utenti)</li>
+          <li>commerciale@lamolisana.it</li>
+          <li>export@lamolisana.it</li>
+          <li>numero verde 800818081</li>
+          <li>telefono 3801292455</li>
+        </ul>
+
       </div>
 
       <div class="la-molisana-info">
-        <h4>pastificio</h4>
-        <span>Il Pastificio</span>
-        <span>Grano decorticato a pietra</span>
-        <span>Il Molise c'è</span>
-        <span>Filiera Integrata</span>
-        <span>100 anni di pasta</span>
-        <span>Sartoria della pasta</span>
-        <span>Spaghetto Quadrato</span>
-        <span>Le Persone</span>
-        <h4>prodotti</h4>
-        <span>Le Classiche</span>
-        <span>Le Integrali</span>
-        <span>Le Speciali</span>
-        <span>Le Biologiche</span>
-        <span>Le Gluten-Free</span>
-        <span>Le Semole</span>
-        <span>Le Extra di Lusso</span>
+
+        <h4 class="footer-title">pastificio</h4>
+
+        <ul>
+          <li>Il Pastificio</li>
+          <li>Grano decorticato a pietra</li>
+          <li>Il Molise c'è</li>
+          <li>Filiera Integrata</li>
+          <li>100 anni di pasta</li>
+          <li>Sartoria della pasta</li>
+          <li>Spaghetto Quadrato</li>
+          <li>Le Persone</li>
+        </ul>
+
+        <h4 class="footer-title">prodotti</h4>
+
+        <ul>
+          <li>Le Classiche</li>
+          <li>Le Integrali</li>
+          <li>Le Speciali</li>
+          <li>Le Biologiche</li>
+          <li>Le Gluten-Free</li>
+          <li>Le Semole</li>
+          <li>Le Extra di Lusso</li>
+        </ul>
+
       </div>
 
       <div class="la-molisana-info">
-        <h4>collezione da chef</h4>
-        <span>Collezione da chef</span>
-        <span>Grandi Cucine</span>
-        <span>Biologiche</span>
-        <span>Quadrate</span>
+
+        <h4 class="footer-title">collezione da chef</h4>
+
+        <ul>
+          <li>Collezione da chef</li>
+          <li>Grandi Cucine</li>
+          <li>Biologiche</li>
+          <li>Quadrate</li>
+        </ul>
+
       </div>
 
     </div>

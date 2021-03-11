@@ -26,12 +26,13 @@
             }
         }
     }
-    img{
+    .logo{
         width: 250px
     }
 }
 .main-content{
-    // background: ;
+    background: url('../../public/background.jpg');
+    padding: 50px 0 50px 0;
 
     .boxes{
         width: 1200px;
@@ -42,8 +43,14 @@
         flex-wrap: wrap;
 
         img{
-            width: 380px
+            width: 380px;
+            margin: 5px
         }
+    }
+    .box-title{
+        text-transform: uppercase;
+        color: #021569;
+        margin-top: 20px
     }
 }
 
@@ -52,6 +59,7 @@
     background-repeat: no-repeat;
     background-position: bottom;
     height: 650px;
+    margin-top: 70px;
     
     .footer-content{
         width: 1200px;
@@ -62,5 +70,28 @@
     .la-molisana-info{
         display: flex;
         flex-direction: column;
+
+        .logo{
+        width: 250px
+        }
+        .footer-title{
+            text-transform: uppercase;
+            color: #818896;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        ul{
+            margin-bottom: 15px;
+
+            li{
+                color: #868D9A;
+                line-height: 1.5em;
+                list-style-type: none;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
     }
 }
