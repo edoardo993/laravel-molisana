@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 230px;
+}
+#header .header-list {
+  list-style-type: none;
+  display: flex;
+  margin-top: 30px;
+}
+#header .header-list li {
+  margin-left: 20px;
+  padding: 10px 5px 10px 5px;
+}
+#header .header-list li:first-child {
+  margin-left: 0;
+}
+#header .header-list li:hover {
+  background: lightblue;
+}
+#header img {
+  width: 250px;
+}
+
+#footer {
+  background: url("https://www.lamolisana.it/wp-content/uploads/2020/06/footer-montagne-bottom.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 650px;
+}
+#footer .footer-content {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#footer .la-molisana-info {
+  display: flex;
+  flex-direction: column;
+}
