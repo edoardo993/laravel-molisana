@@ -137,62 +137,23 @@ $data = '[
 
   @endphp
 
-  @extends('layout.layout')
-  @section('content')
+@extends('layout.layout')
+@section('content')
+  <main class="main-product-content">
 
-  <main class="main-content">
+    @foreach ($array as $item => $pasta)
 
-    <div class="boxes">
-
-      <div class="pasta-lunga">
-
-        <h2 class="box-title">le lunghe</h2>
-
-        <div class="pasta-type">
-
-          @foreach ($array as $id => $pasta)
-            @if($pasta['tipo'] === 'lunga')
-              <a href="/product/{{$id}}"><img src="{{$pasta['src']}}" alt=""></a>
-            @endif
-          @endforeach
-
-        </div>
-
+      <div class="product-info">
+          <h5 class="product-title">{{$pasta['titolo']}}</h5>
+          <img src="{{$pasta['src-h']}}" alt="">
+          <img src="{{$pasta['src-p']}}" alt="">
+          <p class="product-description">{{$pasta['descrizione']}}</p>
       </div>
 
-      <div class="pasta-corta">
+    @endforeach
 
-        <h2 class="box-title">le corte</h2>
-
-        <div class="pasta-type">
-          @foreach ($array as $key => $pasta)
-            @if($pasta['tipo'] === 'corta')
-            <a href="/product/{{$id}}"><img src="{{$pasta['src']}}" alt=""></a>
-            @endif
-          @endforeach
-        </div>
-
-      </div>
-
-      <div class="pasta-cortissima">
-
-        <h2 class="box-title">le cortissime</h2>
-
-        <div class="pasta-type">
-
-          @foreach ($array as $key => $pasta)
-            @if($pasta['tipo'] === 'cortissima')
-              <a href="/product/{{$key}}"><img src="{{$pasta['src']}}" alt=""></a>
-            @endif
-          @endforeach
-
-        </div>
-
-      </div>
-
-    </div>
   </main>
-  @endsection
+@endsection
 
 </body>
 </html>

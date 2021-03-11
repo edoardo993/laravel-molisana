@@ -17,10 +17,10 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/product', function () {
-    return view('pages.product');
+Route::get('/products', function () {
+    return view('pages.products');
 });
 
-Route::get('/product{id}', function($id){
-    return view('product', ['idProduct' => $id]);
+Route::get('/product/{id}', function($id){
+    return view('pages.product', ['idProduct' => $id]);
 });

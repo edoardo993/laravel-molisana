@@ -14,8 +14,8 @@
             <img src="https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="" class="logo">
             
             <ul class="header-list">
-              <li>Home</li>
-              <li>Prodotti</li>
+              <li><a href="http://127.0.0.1:8000">Home</a></li>
+              <li><a href="http://127.0.0.1:8000/products">Prodotti</a></li>
               <li>News</li>
             </ul>
         
