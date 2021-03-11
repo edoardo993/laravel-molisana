@@ -19,11 +19,9 @@
               <li>News</li>
             </ul>
         
-          </header>
+        </header>
 
-        <main class="main-content">
-            @yield('content')
-        </main>
+        @yield('content')
 
         <footer id="footer">
 

@@ -137,72 +137,10 @@ $data = '[
 
   @endphp
 
-  <header id="header">
+@extends('layout.layout')
+@section('content')
 
-    <img src="https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="">
-    
-    <ul class="header-list">
-      <li>Home</li>
-      <li>Prodotti</li>
-      <li>News</li>
-    </ul>
-
-  </header>
-
-  <main class="main-content">
-
-  </main>
-
-  <footer id="footer">
-
-    <div class="footer-content">
-      
-      <div class="la-molisana-info">
-        <img src="https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="">
-        <span>Ragione sociale: La Molisana S.P.A.</span>
-        <span>Sede legale: Contrada Colle delle Alpi, 100/A</span>
-        <span>86100 - Campobasso (CB)</span>
-        <span>Pec: lamolisana@pec.it</span>
-        <span>Tel: +39 0874 4981</span>
-        <span>Fax: +39 0874 629584</span>
-        <span>info@lamolisana.it (per segnalazioni degli utenti)</span>
-        <span>commerciale@lamolisana.it</span>
-        <span>export@lamolisana.it</span>
-        <span>numero verde 800818081</span>
-        <span>telefono 3801292455</span>
-      </div>
-
-      <div class="la-molisana-info">
-        <h4>pastificio</h4>
-        <span>Il Pastificio</span>
-        <span>Grano decorticato a pietra</span>
-        <span>Il Molise c'è</span>
-        <span>Filiera Integrata</span>
-        <span>100 anni di pasta</span>
-        <span>Sartoria della pasta</span>
-        <span>Spaghetto Quadrato</span>
-        <span>Le Persone</span>
-        <h4>prodotti</h4>
-        <span>Le Classiche</span>
-        <span>Le Integrali</span>
-        <span>Le Speciali</span>
-        <span>Le Biologiche</span>
-        <span>Le Gluten-Free</span>
-        <span>Le Semole</span>
-        <span>Le Extra di Lusso</span>
-      </div>
-
-      <div class="la-molisana-info">
-        <h4>collezione da chef</h4>
-        <span>Collezione da chef</span>
-        <span>Grandi Cucine</span>
-        <span>Biologiche</span>
-        <span>Quadrate</span>
-      </div>
-
-    </div>
-
-  </footer>
+@endsection
 
 </body>
 </html>

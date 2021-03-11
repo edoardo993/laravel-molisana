@@ -140,6 +140,8 @@ $data = '[
   @extends('layout.layout')
   @section('content')
 
+  <main class="main-content">
+
     <div class="boxes">
 
       <div class="pasta-lunga">
@@ -165,7 +167,7 @@ $data = '[
         <div class="pasta-type">
           @foreach ($array as $key => $pasta)
             @if($pasta['tipo'] === 'corta')
-            <img src="{{$pasta['src']}}" alt="">
+            <a href="/product{{$id}}"><img src="{{$pasta['src']}}" alt=""></a>
             @endif
           @endforeach
         </div>
@@ -180,7 +182,7 @@ $data = '[
 
           @foreach ($array as $key => $pasta)
             @if($pasta['tipo'] === 'cortissima')
-            <img src="{{$pasta['src']}}" alt="">
+            <a href="/product{{$id}}"><img src="{{$pasta['src']}}" alt=""></a>
             @endif
           @endforeach
 
@@ -189,6 +191,7 @@ $data = '[
       </div>
 
     </div>
+  </main>
   @endsection
 
 </body>
