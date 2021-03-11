@@ -30,7 +30,22 @@
         width: 250px
     }
 }
+.main-content{
+    // background: ;
 
+    .boxes{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    .pasta-type{
+        display: flex;
+        flex-wrap: wrap;
+
+        img{
+            width: 380px
+        }
+    }
+}
 
 #footer{
     background: url('https://www.lamolisana.it/wp-content/uploads/2020/06/footer-montagne-bottom.jpg');
@@ -38,8 +53,6 @@
     background-position: bottom;
     height: 650px;
     
-
-
     .footer-content{
         width: 1200px;
         margin: 0 auto;

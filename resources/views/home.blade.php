@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="{{asset('css/app.css')}}">
-  <title>Document</title>
+  <title>La Molisana</title>
 </head>
 <body>
   @php
@@ -161,7 +161,7 @@ $data = '[
 
           @foreach ($array as $key => $pasta)
             @if($pasta['tipo'] === 'lunga')
-              <div>{{$pasta['titolo']}}</div>
+              <img src="{{$pasta['src']}}" alt="">
             @endif
           @endforeach
         </div>
@@ -175,7 +175,7 @@ $data = '[
         <div class="pasta-type">
           @foreach ($array as $key => $pasta)
             @if($pasta['tipo'] === 'corta')
-            <div>{{$pasta['titolo']}}</div>
+            <img src="{{$pasta['src']}}" alt="">
             @endif
           @endforeach
         </div>
@@ -190,7 +190,7 @@ $data = '[
 
           @foreach ($array as $key => $pasta)
             @if($pasta['tipo'] === 'cortissima')
-            <div>{{$pasta['titolo']}}</div>
+            <img src="{{$pasta['src']}}" alt="">
             @endif
           @endforeach
 
@@ -205,7 +205,7 @@ $data = '[
   <footer id="footer">
 
     <div class="footer-content">
-      
+
       <div class="la-molisana-info">
         <img src="https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="">
         <span>Ragione sociale: La Molisana S.P.A.</span>

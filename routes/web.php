@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/product', function () {
     return view('pages.product');
 });
+
+Route::get('/product{id}', function($id){
+    return view('product', ['idProduct' => $id]);
+});
