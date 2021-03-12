@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
         <title>Laravel-Molisana</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
     </head>
     <body>
@@ -19,6 +20,10 @@
               <li><a href="http://127.0.0.1:8000/products">Prodotti</a></li>
               <li>News</li>
             </ul>
+
+            <div class="hide hamburger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
         
         </header>
 

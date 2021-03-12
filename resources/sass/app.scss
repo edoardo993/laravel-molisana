@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+.hide{
+    display:none
+}
 a{
     text-decoration: none;
     color: #000
@@ -34,6 +37,16 @@ a{
     }
     .logo{
         width: 250px
+    }
+    .hamburger-menu{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #021569;
+
+        &:hover{
+            cursor: pointer;
+        }
     }
 }
 .main-content{
@@ -126,15 +139,13 @@ a{
     #header{
     
         .header-list{
-            margin-top: 15px;
-    
-            li{
-                margin-left: 10px;
-                padding: 6px 5px 6px 5px;
-            }
+            display: none;
         }
         .logo{
             width: 100px
+        }
+        .hamburger-menu{
+            display: block
         }
     }
     .main-content{
@@ -157,6 +168,26 @@ a{
             margin-bottom: 10px;
         }
     }
+    .main-product-content{
+        padding: 20px;
+    
+        .product-info{
+            @include flex-column;
+            @include size;
+            padding: 0;
+    
+            .product-title{
+                font-size: 14px;
+                margin-top: 15px;
+            }
+            .product-description{
+                font-size: 10px;
+            }
+        }
+        img{
+            width: 100%
+        }
+    }
     #footer{
         height: 850px;
         margin-top: 25px;
@@ -166,7 +197,7 @@ a{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding-left: 25px
+            padding-left: 20px
         }
         .la-molisana-info{
             @include flex-column;
