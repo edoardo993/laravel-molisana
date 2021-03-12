@@ -59,6 +59,7 @@ a {
 .main-content .pasta-type {
   display: flex;
   flex-wrap: wrap;
+  padding-left: 15px;
 }
 .main-content .pasta-type img {
   width: 380px;
@@ -81,6 +82,7 @@ a {
   margin: 0 auto;
   align-items: center;
   padding: 25px 0 25px 0;
+  position: relative;
 }
 .main-product-content .product-info .product-title {
   color: #193B77;
@@ -90,6 +92,28 @@ a {
   color: #193B77;
   font-size: 15px;
   line-height: 1.5em;
+}
+.main-product-content .product-info .left-slider-arrow,
+.main-product-content .product-info .right-slider-arrow {
+  font-size: 60px;
+  position: absolute;
+  top: 50%;
+  color: #6090e2;
+  height: 85px;
+  width: 55px;
+  background: #DFECF1;
+  border-radius: 5px;
+  text-align: center;
+}
+.main-product-content .product-info .left-slider-arrow:hover,
+.main-product-content .product-info .right-slider-arrow:hover {
+  cursor: pointer;
+}
+.main-product-content .product-info .left-slider-arrow {
+  left: -100px;
+}
+.main-product-content .product-info .right-slider-arrow {
+  right: -100px;
 }
 .main-product-content img {
   width: 100%;
@@ -133,6 +157,99 @@ a {
   cursor: pointer;
 }
 
+@media screen and (max-width: 991px) {
+  #header .header-list {
+    display: none;
+  }
+  #header .logo {
+    width: 150px;
+  }
+  #header .hamburger-menu {
+    display: block;
+    top: 35px;
+    right: 20px;
+  }
+
+  .main-content {
+    padding: 20px 0 20px 0;
+  }
+  .main-content .pasta-type {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .main-content .pasta-type img {
+    width: 250px;
+  }
+  .main-content .box-title {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  .main-product-content {
+    padding: 20px 40px 20px 40px;
+  }
+  .main-product-content .product-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .main-product-content .product-info .product-title {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  .main-product-content .product-info .product-description {
+    font-size: 10px;
+  }
+  .main-product-content .product-info .left-slider-arrow,
+.main-product-content .product-info .right-slider-arrow {
+    font-size: 30px;
+    height: 40px;
+    width: 25px;
+    line-height: 40px;
+  }
+  .main-product-content .product-info .left-slider-arrow {
+    left: -35px;
+  }
+  .main-product-content .product-info .right-slider-arrow {
+    right: -35px;
+  }
+  .main-product-content img {
+    width: 100%;
+  }
+
+  #footer {
+    height: 850px;
+    margin-top: 25px;
+  }
+  #footer .footer-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+  }
+  #footer .la-molisana-info {
+    display: flex;
+    flex-direction: column;
+  }
+  #footer .la-molisana-info .logo {
+    width: 100px;
+  }
+  #footer .la-molisana-info .footer-title {
+    text-transform: uppercase;
+    color: #818896;
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  #footer .la-molisana-info ul {
+    margin-bottom: 15px;
+  }
+  #footer .la-molisana-info ul li {
+    font-size: 12px;
+  }
+}
 @media screen and (max-width: 575px) {
   #header .header-list {
     display: none;
@@ -142,6 +259,8 @@ a {
   }
   #header .hamburger-menu {
     display: block;
+    top: 20px;
+    right: 20px;
   }
 
   .main-content {
@@ -164,7 +283,7 @@ a {
   }
 
   .main-product-content {
-    padding: 20px;
+    padding: 20px 40px 20px 40px;
   }
   .main-product-content .product-info {
     display: flex;
@@ -179,6 +298,19 @@ a {
   }
   .main-product-content .product-info .product-description {
     font-size: 10px;
+  }
+  .main-product-content .product-info .left-slider-arrow,
+.main-product-content .product-info .right-slider-arrow {
+    font-size: 30px;
+    height: 40px;
+    width: 25px;
+    line-height: 40px;
+  }
+  .main-product-content .product-info .left-slider-arrow {
+    left: -35px;
+  }
+  .main-product-content .product-info .right-slider-arrow {
+    right: -35px;
   }
   .main-product-content img {
     width: 100%;
