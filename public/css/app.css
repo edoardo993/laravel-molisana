@@ -81,7 +81,7 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   align-items: center;
-  padding: 25px 0 25px 0;
+  padding: 25px 20px 25px 20px;
   position: relative;
 }
 .main-product-content .product-info .product-title {
@@ -110,10 +110,10 @@ a {
   cursor: pointer;
 }
 .main-product-content .product-info .left-slider-arrow {
-  left: -100px;
+  left: 0;
 }
 .main-product-content .product-info .right-slider-arrow {
-  right: -100px;
+  right: 0;
 }
 .main-product-content img {
   width: 100%;
@@ -130,11 +130,14 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  padding: 0 20px 0 20px;
 }
 #footer .la-molisana-info {
   display: flex;
   flex-direction: column;
+}
+#footer .la-molisana-info:nth-child(2) {
+  margin: 0 100px 0 100px;
 }
 #footer .la-molisana-info .logo {
   width: 250px;
@@ -157,6 +160,12 @@ a {
   cursor: pointer;
 }
 
+@media screen and (max-width: 1200px) {
+  .main-content .pasta-type {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
 @media screen and (max-width: 991px) {
   #header .header-list {
     display: none;
@@ -200,7 +209,7 @@ a {
     margin-top: 15px;
   }
   .main-product-content .product-info .product-description {
-    font-size: 10px;
+    font-size: 12px;
   }
   .main-product-content .product-info .left-slider-arrow,
 .main-product-content .product-info .right-slider-arrow {
@@ -220,26 +229,25 @@ a {
   }
 
   #footer {
-    height: 850px;
+    height: 900px;
     margin-top: 25px;
   }
   #footer .footer-content {
     width: 100%;
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding-left: 20px;
+    padding-left: 40px;
   }
   #footer .la-molisana-info {
     display: flex;
     flex-direction: column;
   }
+  #footer .la-molisana-info:nth-child(2) {
+    margin: 0;
+  }
   #footer .la-molisana-info .logo {
     width: 100px;
   }
   #footer .la-molisana-info .footer-title {
-    text-transform: uppercase;
-    color: #818896;
     font-size: 15px;
     margin-bottom: 15px;
   }
@@ -251,99 +259,27 @@ a {
   }
 }
 @media screen and (max-width: 575px) {
-  #header .header-list {
-    display: none;
-  }
   #header .logo {
     width: 100px;
   }
   #header .hamburger-menu {
-    display: block;
     top: 20px;
-    right: 20px;
   }
 
-  .main-content {
-    padding: 20px 0 20px 0;
-  }
   .main-content .boxes {
     width: 100%;
   }
   .main-content .pasta-type {
     flex-direction: column;
-    align-items: center;
   }
   .main-content .pasta-type img {
     width: 180px;
   }
   .main-content .box-title {
-    font-size: 17px;
     text-align: center;
-    margin-bottom: 10px;
   }
 
-  .main-product-content {
-    padding: 20px 40px 20px 40px;
-  }
-  .main-product-content .product-info {
-    display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0;
-  }
-  .main-product-content .product-info .product-title {
-    font-size: 14px;
-    margin-top: 15px;
-  }
   .main-product-content .product-info .product-description {
     font-size: 10px;
-  }
-  .main-product-content .product-info .left-slider-arrow,
-.main-product-content .product-info .right-slider-arrow {
-    font-size: 30px;
-    height: 40px;
-    width: 25px;
-    line-height: 40px;
-  }
-  .main-product-content .product-info .left-slider-arrow {
-    left: -35px;
-  }
-  .main-product-content .product-info .right-slider-arrow {
-    right: -35px;
-  }
-  .main-product-content img {
-    width: 100%;
-  }
-
-  #footer {
-    height: 850px;
-    margin-top: 25px;
-  }
-  #footer .footer-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 20px;
-  }
-  #footer .la-molisana-info {
-    display: flex;
-    flex-direction: column;
-  }
-  #footer .la-molisana-info .logo {
-    width: 100px;
-  }
-  #footer .la-molisana-info .footer-title {
-    text-transform: uppercase;
-    color: #818896;
-    font-size: 15px;
-    margin-bottom: 15px;
-  }
-  #footer .la-molisana-info ul {
-    margin-bottom: 15px;
-  }
-  #footer .la-molisana-info ul li {
-    font-size: 12px;
   }
 }
