@@ -1,0 +1,8 @@
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+@mixin size {
+    width: 1200px;
+    margin: 0 auto
+}

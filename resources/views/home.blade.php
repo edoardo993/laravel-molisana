@@ -165,7 +165,7 @@ $data = '[
         <h2 class="box-title">le corte</h2>
 
         <div class="pasta-type">
-          @foreach ($array as $key => $pasta)
+          @foreach ($array as $id => $pasta)
             @if($pasta['tipo'] === 'corta')
             <a href="/product/{{$id}}"><img src="{{$pasta['src']}}" alt=""></a>
             @endif
@@ -180,9 +180,9 @@ $data = '[
 
         <div class="pasta-type">
 
-          @foreach ($array as $key => $pasta)
+          @foreach ($array as $id => $pasta)
             @if($pasta['tipo'] === 'cortissima')
-              <a href="/product/{{$key}}"><img src="{{$pasta['src']}}" alt=""></a>
+              <a href="/product/{{$id}}"><img src="{{$pasta['src']}}" alt=""></a>
             @endif
           @endforeach
 

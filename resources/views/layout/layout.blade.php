@@ -11,7 +11,7 @@
 
         <header id="header">
 
-            <img src="https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="" class="logo">
+            <a href="http://127.0.0.1:8000"><img src="https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="" class="logo"></a>
             
             <ul class="header-list">
               <li><a href="http://127.0.0.1:8000">Home</a></li>
@@ -29,7 +29,7 @@
         
               <div class="la-molisana-info">
         
-                <img src="https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="" class="logo">
+                <a href="http://127.0.0.1:8000"><img src="https://www.lamolisana.it/wp-content/uploads/2020/04/marchio-sito-test.png" alt="" class="logo"></a>
                 <ul>
                   <li>Ragione sociale: La Molisana S.P.A.</li>
                   <li>Sede legale: Contrada Colle delle Alpi, 100/A</li>

@@ -145,7 +145,7 @@ $data = '[
         <h5 class="product-title">{{$array[$idProduct]['titolo']}}</h5>
         <img src="{{$array[$idProduct]['src-h']}}" alt="">
         <img src="{{$array[$idProduct]['src-p']}}" alt="">
-        <p class="product-description">{{$array[$idProduct]['descrizione']}}</p>
+        <p class="product-description">{!!$array[$idProduct]['descrizione']!!}</p>
     </div>
 
   </main>

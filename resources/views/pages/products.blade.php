@@ -147,7 +147,7 @@ $data = '[
           <h5 class="product-title">{{$pasta['titolo']}}</h5>
           <img src="{{$pasta['src-h']}}" alt="">
           <img src="{{$pasta['src-p']}}" alt="">
-          <p class="product-description">{{$pasta['descrizione']}}</p>
+          <p class="product-description">{!!$pasta['descrizione']!!}</p>
       </div>
 
     @endforeach
