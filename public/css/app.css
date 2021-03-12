@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -117,4 +118,67 @@ a {
 }
 #footer .la-molisana-info ul li:hover {
   cursor: pointer;
+}
+
+@media screen and (max-width: 575px) {
+  #header .header-list {
+    margin-top: 15px;
+  }
+  #header .header-list li {
+    margin-left: 10px;
+    padding: 6px 5px 6px 5px;
+  }
+  #header .logo {
+    width: 100px;
+  }
+
+  .main-content {
+    padding: 20px 0 20px 0;
+  }
+  .main-content .boxes {
+    width: 100%;
+  }
+  .main-content .pasta-type {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-content .pasta-type img {
+    width: 180px;
+  }
+  .main-content .box-title {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  #footer {
+    height: 850px;
+    margin-top: 25px;
+  }
+  #footer .footer-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 25px;
+  }
+  #footer .la-molisana-info {
+    display: flex;
+    flex-direction: column;
+  }
+  #footer .la-molisana-info .logo {
+    width: 100px;
+  }
+  #footer .la-molisana-info .footer-title {
+    text-transform: uppercase;
+    color: #818896;
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  #footer .la-molisana-info ul {
+    margin-bottom: 15px;
+  }
+  #footer .la-molisana-info ul li {
+    font-size: 12px;
+  }
 }

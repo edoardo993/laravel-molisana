@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 a{
     text-decoration: none;
@@ -36,7 +37,7 @@ a{
     }
 }
 .main-content{
-    background: url('../../public/background.jpg');
+    background: url('../../public/img/background.jpg');
     padding: 50px 0 50px 0;
 
     .boxes{
@@ -97,7 +98,7 @@ a{
         @include flex-column;
 
         .logo{
-        width: 250px
+            width: 250px
         }
         .footer-title{
             text-transform: uppercase;
@@ -119,4 +120,76 @@ a{
             }
         }
     }
+}
+
+@media screen and (max-width: 575px){
+    #header{
+    
+        .header-list{
+            margin-top: 15px;
+    
+            li{
+                margin-left: 10px;
+                padding: 6px 5px 6px 5px;
+            }
+        }
+        .logo{
+            width: 100px
+        }
+    }
+    .main-content{
+        padding: 20px 0 20px 0;
+    
+        .boxes{
+            width: 100%;
+        }
+        .pasta-type{
+            flex-direction: column;
+            align-items: center;
+    
+            img{
+                width: 180px;
+            }
+        }
+        .box-title{
+            font-size: 17px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+    #footer{
+        height: 850px;
+        margin-top: 25px;
+        
+        .footer-content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 25px
+        }
+        .la-molisana-info{
+            @include flex-column;
+    
+            .logo{
+            width: 100px
+            }
+            .footer-title{
+                text-transform: uppercase;
+                color: #818896;
+                font-size: 15px;
+                margin-bottom: 15px;
+            }
+            ul{
+                margin-bottom: 15px;
+
+                li{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px){
+
 }

@@ -14,13 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $pasta = config('pasta');
+    return view('home', ['pastaArray' => $pasta]);
 });
 
 Route::get('/products', function () {
-    return view('pages.products');
+    $pasta = config('pasta');
+    return view('pages.products', ['pastaArray' => $pasta]);
 });
 
-Route::get('/product/{id}', function($id){
-    return view('pages.product', ['idProduct' => $id]);
+Route::get('/product/{id?}', function($id=null){
+    $pasta = config('pasta');
+    if($id > count($pasta)){
+        return abort(404);
+    }
+    // if(empty($id)){
+    //     return redirect('/');
+    // }
+    return view('pages.product', ['idProduct' => $id], ['pastaArray' => $pasta]);
 });
