@@ -82,15 +82,13 @@ a{
         align-items: center;
         padding: 25px 20px 25px 20px;
         position: relative;
+        color: #193B77;
+        font-size: 15px;
+        line-height: 1.5em;
 
         .product-title{
             color: #193B77;
             font-size: 20px;
-        }
-        .product-description{
-            color: #193B77;
-            font-size: 15px;
-            line-height: 1.5em;
         }
         .left-slider-arrow,
         .right-slider-arrow{
@@ -103,6 +101,7 @@ a{
             background: #DFECF1;
             border-radius: 5px;
             text-align: center;
+            line-height: 85px;
 
             &:hover{
                 cursor: pointer;

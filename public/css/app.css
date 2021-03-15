@@ -83,15 +83,13 @@ a {
   align-items: center;
   padding: 25px 20px 25px 20px;
   position: relative;
+  color: #193B77;
+  font-size: 15px;
+  line-height: 1.5em;
 }
 .main-product-content .product-info .product-title {
   color: #193B77;
   font-size: 20px;
-}
-.main-product-content .product-info .product-description {
-  color: #193B77;
-  font-size: 15px;
-  line-height: 1.5em;
 }
 .main-product-content .product-info .left-slider-arrow,
 .main-product-content .product-info .right-slider-arrow {
@@ -104,6 +102,7 @@ a {
   background: #DFECF1;
   border-radius: 5px;
   text-align: center;
+  line-height: 85px;
 }
 .main-product-content .product-info .left-slider-arrow:hover,
 .main-product-content .product-info .right-slider-arrow:hover {
